@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravindo Learning – Sistem Kelistrikan Kapal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="nav-anchor">⚓</span>
+      <div>
+        <div class="nav-title">Ravindo Learning</div>
+        <div class="nav-sub">Modules</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Beranda</a>
+      <a href="#modules" class="nav-link">Modul</a>
+      <a href="#about" class="nav-link">Tentang</a>
+      <a href="#resources" class="nav-link">Referensi</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Beranda</a>
+    <a href="#modules">Modul</a>
+    <a href="#about">Tentang</a>
+    <a href="#resources">Referensi</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="circuit-lines" id="circuitCanvas"></div>
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Universitas Hang Tuah Surabaya · Program Vokasi Ilmu Pelayaran</div>
+    <h1 class="hero-title">Sistem<br/>Kelistrikan<br/><span class="accent-word">Kapal</span></h1>
+    <p class="hero-desc">
+      Mata kuliah komprehensif 16 minggu untuk taruna D4 Teknik Permesinan Kapal.<br/>
+      Dari dasar kelistrikan hingga manajemen sistem modern kapal.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-num">16</span>
+        <span class="meta-label">Pertemuan</span>
+      </div>
+      <div class="meta-div"></div>
+      <div class="meta-item">
+        <span class="meta-num">3</span>
+        <span class="meta-label">SKS</span>
+      </div>
+      <div class="meta-div"></div>
+      <div class="meta-item">
+        <span class="meta-num">5</span>
+        <span class="meta-label">CPMK</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#modules" class="btn-primary">Mulai Belajar →</a>
+      <a href="#about" class="btn-ghost">Tentang Mata Kuliah</a>
+    </div>
+  </div>
+  <div class="hero-ship">
+    <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Ship silhouette -->
+      <path d="M20 140 L60 140 L60 100 L100 80 L140 80 L160 60 L220 60 L240 80 L300 80 L320 100 L360 140 L380 140 L380 160 L20 160 Z" fill="rgba(0,200,255,0.08)" stroke="rgba(0,200,255,0.4)" stroke-width="1.5"/>
+      <!-- Cabin -->
+      <rect x="160" y="60" width="80" height="40" fill="rgba(0,200,255,0.06)" stroke="rgba(0,200,255,0.3)" stroke-width="1"/>
+      <!-- Antenna -->
+      <line x1="200" y1="60" x2="200" y2="30" stroke="rgba(0,200,255,0.5)" stroke-width="1.5"/>
+      <circle cx="200" cy="28" r="3" fill="rgba(0,200,255,0.8)"/>
+      <!-- Waves -->
+      <path d="M0 170 Q50 155 100 170 Q150 185 200 170 Q250 155 300 170 Q350 185 400 170" stroke="rgba(0,200,255,0.3)" stroke-width="1.5" fill="none"/>
+      <path d="M0 180 Q50 165 100 180 Q150 195 200 180 Q250 165 300 180 Q350 195 400 180" stroke="rgba(0,200,255,0.15)" stroke-width="1" fill="none"/>
+      <!-- Electric bolts -->
+      <path d="M280 90 L290 78 L285 85 L295 72" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+      <path d="M120 90 L130 78 L125 85 L135 72" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+</section>
+
+<!-- CPMK STRIP -->
+<section class="cpmk-strip">
+  <div class="container">
+    <div class="strip-title">Capaian Pembelajaran Mata Kuliah (CPMK)</div>
+    <div class="cpmk-grid">
+      <div class="cpmk-card" style="--delay:0s">
+        <div class="cpmk-num">CPMK 1</div>
+        <div class="cpmk-name">Konseptual Dasar</div>
+        <p>Menganalisis prinsip dasar kelistrikan AC/DC, hukum Ohm-Kirchhoff, sistem pembangkitan dan distribusi daya kapal.</p>
+      </div>
+      <div class="cpmk-card" style="--delay:0.1s">
+        <div class="cpmk-num">CPMK 2</div>
+        <div class="cpmk-name">Interpretasi Sistem</div>
+        <p>Membaca, menginterpretasikan, dan menganalisis diagram kelistrikan satu-garis, diagram kendali, dan wiring diagram.</p>
+      </div>
+      <div class="cpmk-card" style="--delay:0.2s">
+        <div class="cpmk-num">CPMK 3</div>
+        <div class="cpmk-name">Troubleshooting</div>
+        <p>Melakukan prosedur troubleshooting kelistrikan dasar hingga menengah pada sistem generator, distribusi, motor, dan kontrol.</p>
+      </div>
+      <div class="cpmk-card" style="--delay:0.3s">
+        <div class="cpmk-num">CPMK 4</div>
+        <div class="cpmk-name">Pemeliharaan</div>
+        <p>Melaksanakan perawatan preventif, perbaikan sederhana, dan penggantian komponen sesuai standar PMS.</p>
+      </div>
+      <div class="cpmk-card" style="--delay:0.4s">
+        <div class="cpmk-num">CPMK 5</div>
+        <div class="cpmk-name">Manajemen & Koordinasi</div>
+        <p>Memahami batasan kewenangan C/E dan koordinasi efektif dengan Electro-Technical Officer (ETO).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section class="modules-section" id="modules">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Kurikulum 16 Minggu</div>
+      <h2 class="section-title">Rencana Pembelajaran<br/><span class="accent">Semester (RPS)</span></h2>
+    </div>
+
+    <!-- Phase Labels -->
+    <div class="phase-bar">
+      <div class="phase phase-basic">Pertemuan 1–5 · Konsep Dasar</div>
+      <div class="phase phase-mid">Pertemuan 6–10 · Konsep Menengah</div>
+      <div class="phase phase-adv">Pertemuan 11–14 · Konsep Lanjutan</div>
+      <div class="phase phase-prac">Pertemuan 15–16 · Troubleshooting & UAS</div>
+    </div>
+
+    <div class="module-grid" id="moduleGrid">
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSMENT -->
+<section class="assessment-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Evaluasi</div>
+      <h2 class="section-title">Sistem <span class="accent">Penilaian</span></h2>
+    </div>
+    <div class="assess-layout">
+      <div class="assess-chart">
+        <div class="donut-wrap">
+          <svg viewBox="0 0 200 200" class="donut">
+            <!-- Background -->
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#1a2744" stroke-width="28"/>
+            <!-- Skills 50% -->
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#00C8FF" stroke-width="28"
+              stroke-dasharray="251 251" stroke-dashoffset="0" stroke-linecap="butt" transform="rotate(-90 100 100)"/>
+            <!-- Knowledge 40% -->
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#FFD700" stroke-width="28"
+              stroke-dasharray="200.9 301.4" stroke-dashoffset="-251" stroke-linecap="butt" transform="rotate(-90 100 100)"/>
+            <!-- Attitude 10% -->
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#FF6B6B" stroke-width="28"
+              stroke-dasharray="50.2 452" stroke-dashoffset="-451.9" stroke-linecap="butt" transform="rotate(-90 100 100)"/>
+            <text x="100" y="94" text-anchor="middle" fill="white" font-size="28" font-weight="700" font-family="'IBM Plex Mono'">100</text>
+            <text x="100" y="114" text-anchor="middle" fill="#8899BB" font-size="11" font-family="'IBM Plex Sans'">Total Poin</text>
+          </svg>
+        </div>
+      </div>
+      <div class="assess-details">
+        <div class="assess-item">
+          <div class="assess-color" style="background:#00C8FF"></div>
+          <div>
+            <div class="assess-label">Keterampilan (Praktikum)</div>
+            <div class="assess-breakdown">Laporan praktikum 15% · Simulasi troubleshooting 20% · Final project 15%</div>
+          </div>
+          <div class="assess-pct">50%</div>
+        </div>
+        <div class="assess-item">
+          <div class="assess-color" style="background:#FFD700"></div>
+          <div>
+            <div class="assess-label">Pengetahuan (Teori)</div>
+            <div class="assess-breakdown">Kuis mingguan 10% · UTS 15% · UAS 15%</div>
+          </div>
+          <div class="assess-pct">40%</div>
+        </div>
+        <div class="assess-item">
+          <div class="assess-color" style="background:#FF6B6B"></div>
+          <div>
+            <div class="assess-label">Sikap & Kehadiran</div>
+            <div class="assess-breakdown">Kehadiran & ketepatan waktu 5% · Partisipasi aktif 5%</div>
+          </div>
+          <div class="assess-pct">10%</div>
+        </div>
+        <div class="grade-table">
+          <div class="grade-title">Konversi Nilai</div>
+          <div class="grade-row header-row">
+            <span>Predikat</span><span>Huruf</span><span>Rentang</span>
+          </div>
+          <div class="grade-row"><span>Istimewa</span><span class="grade-A">A</span><span>87.5 – 100</span></div>
+          <div class="grade-row"><span>Sangat Baik</span><span class="grade-AB">A-</span><span>82.5 – 87.49</span></div>
+          <div class="grade-row"><span>Baik</span><span class="grade-B">B</span><span>78.0 – 82.49</span></div>
+          <div class="grade-row"><span>Cukup</span><span class="grade-C">C</span><span>70.0 – 73.49</span></div>
+          <div class="grade-row"><span>Kurang</span><span class="grade-D">D</span><span>34.5 – 69.99</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY HIGHLIGHT -->
+<section class="safety-section">
+  <div class="container">
+    <div class="safety-box">
+      <div class="safety-icon">⚡</div>
+      <div class="safety-content">
+        <h3>Prosedur LOTO — Keselamatan Utama</h3>
+        <p>Lock Out · Tag Out · Test Out — Setiap pekerjaan kelistrikan dimulai dengan LOTO.</p>
+        <div class="loto-steps">
+          <div class="loto-step"><span class="step-num">1</span><span>Identifikasi sumber daya</span></div>
+          <div class="loto-step"><span class="step-num">2</span><span>Isolasi dengan CB/Isolator</span></div>
+          <div class="loto-step"><span class="step-num">3</span><span>Lock & Tag peringatan</span></div>
+          <div class="loto-step"><span class="step-num">4</span><span>Test dengan multimeter</span></div>
+          <div class="loto-step"><span class="step-num">5</span><span>Kerja dengan APD lengkap</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-tag">Tentang Mata Kuliah</div>
+        <h2 class="section-title">Filosofi<br/><span class="accent">Pembelajaran</span></h2>
+        <blockquote class="quote">
+          "A Chief Engineer who ignores electrical systems is a captain navigating blindfolded."
+        </blockquote>
+        <p class="about-text">
+          Peran Chief Engineer (C/E) telah berevolusi dari sekadar <em>engine operator</em> menjadi 
+          <strong>integrated system manager</strong>. Pemahaman kelistrikan adalah kompetensi wajib 
+          yang setara dengan termodinamika dan mekanika fluida.
+        </p>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-label">Kode MK</div>
+            <div class="info-val">SKP-203</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Semester</div>
+            <div class="info-val">III</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Program Studi</div>
+            <div class="info-val">D4 TPK</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Tahun Akademik</div>
+            <div class="info-val">2025/2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="instructor-card">
+          <div class="instructor-avatar">
+            <div class="avatar-circle">RS</div>
+            <div class="avatar-badge">CE</div>
+          </div>
+          <div class="instructor-info">
+            <div class="instructor-role">Dosen Pengampu</div>
+            <div class="instructor-name">Rafael Sukirno, CE</div>
+            <div class="instructor-dept">Teknik Permesinan Kapal<br/>Universitas Hang Tuah Surabaya</div>
+          </div>
+          <div class="instructor-divider"></div>
+          <div class="instructor-stats">
+            <div class="i-stat"><span>D4</span><small>Program</small></div>
+            <div class="i-stat"><span>STCW</span><small>Standar</small></div>
+            <div class="i-stat"><span>IMO</span><small>Acuan</small></div>
+          </div>
+        </div>
+        <div class="method-list">
+          <div class="method-title">Metode Pembelajaran</div>
+          <div class="method-row"><div class="method-bar" style="width:30%"></div><span>Ceramah Interaktif</span><strong>30%</strong></div>
+          <div class="method-row"><div class="method-bar" style="width:30%"></div><span>Demonstrasi Praktik</span><strong>30%</strong></div>
+          <div class="method-row"><div class="method-bar" style="width:20%"></div><span>Simulasi</span><strong>20%</strong></div>
+          <div class="method-row"><div class="method-bar" style="width:10%"></div><span>Studi Kasus</span><strong>10%</strong></div>
+          <div class="method-row"><div class="method-bar" style="width:10%"></div><span>Project-Based</span><strong>10%</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="resources-section" id="resources">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Pustaka & Standar</div>
+      <h2 class="section-title">Referensi <span class="accent">Pembelajaran</span></h2>
+    </div>
+    <div class="resources-grid">
+      <div class="resource-group">
+        <div class="rg-title">📚 Buku Wajib</div>
+        <div class="resource-item">
+          <div class="ri-dot"></div>
+          <div><strong>McGeorge, H.D.</strong> (2002) — Marine Electrical Equipment and Practice. Butterworth-Heinemann.</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot"></div>
+          <div><strong>Taylor, D.A.</strong> (1990) — Introduction to Marine Engineering. Butterworth-Heinemann.</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot"></div>
+          <div><strong>Meier, F.</strong> (2018) — Marine Electrical Systems. Shroff Publishers.</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot"></div>
+          <div><strong>Hall, D.T.</strong> — Practical Marine Electrical Knowledge. Witherby & Co Ltd.</div>
+        </div>
+      </div>
+      <div class="resource-group">
+        <div class="rg-title">🌐 Standar Internasional</div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FFD700"></div>
+          <div><strong>SOLAS Ch. II-1</strong> — Main & Emergency Electrical Power</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FFD700"></div>
+          <div><strong>STCW 2010</strong> — Manila Amendments Table A-III/1 & A-III/2</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FFD700"></div>
+          <div><strong>IACS UR E22, D11, M67</strong> — Electrical & Power Management</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FFD700"></div>
+          <div><strong>IEC 60092 & 60533</strong> — Electrical Installations in Ships & EMC</div>
+        </div>
+      </div>
+      <div class="resource-group">
+        <div class="rg-title">🇮🇩 Standar Nasional</div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FF6B6B"></div>
+          <div><strong>BKI</strong> — Rules for Classification of Steel Ships, Part VI</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FF6B6B"></div>
+          <div><strong>SKKNI</strong> — Lembaga Sertifikasi Profesi Permesinan Kapal</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#FF6B6B"></div>
+          <div><strong>Diklat Pelaut Indonesia</strong> — Competency Framework Marine Engineers</div>
+        </div>
+      </div>
+      <div class="resource-group">
+        <div class="rg-title">🔗 Sumber Online</div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#9B59FF"></div>
+          <div><a href="https://www.imo.org" target="_blank">www.imo.org</a> — IMO Publications</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#9B59FF"></div>
+          <div><a href="https://www.iacs.org.uk" target="_blank">www.iacs.org.uk</a> — IACS Publications</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#9B59FF"></div>
+          <div><a href="https://www.bki.co.id" target="_blank">www.bki.co.id</a> — BKI Online</div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-dot" style="background:#9B59FF"></div>
+          <div><a href="https://www.marineinsight.com" target="_blank">www.marineinsight.com</a> — Marine Insight</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">⚓ Ravindo Learning Modules</div>
+        <div class="footer-tagline">Modul Pembelajaran Kelistrikan Kapal</div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-detail">Dibuat oleh <strong>Rafael Sukirno, CE</strong></div>
+        <div class="footer-detail">Dosen Teknik Permesinan Kapal</div>
+        <div class="footer-detail">Universitas Hang Tuah Surabaya</div>
+        <div class="footer-detail">Disusun: 22 Januari 2026</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Ravindo Learning Modules · SKP-203 Sistem Kelistrikan Kapal</div>
+      <div class="footer-motto">"The sea is unforgiving. Electrical knowledge is a survival skill."</div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
